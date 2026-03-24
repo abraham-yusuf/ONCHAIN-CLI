@@ -1,0 +1,32 @@
+{
+  "name": "onchain-cli",
+  "version": "1.0.0",
+  "description": "CLI to explorer on Chain",
+  "main": "dist/index.js",
+  "bin": {
+    "onchain": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "postinstall": "npm run build"
+  },
+  "keywords": ["cli", "crypto", "onchain", "ai", "bankr", "multi-chain"],
+  "author": "abraham-yusuf",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.13.6",
+    "chalk": "^5.6.2",
+    "commander": "^13.1.0",
+    "conf": "^13.1.0",
+    "dotenv": "^17.3.1",
+    "table": "^6.9.0"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.9.36",
+    "@types/node": "^25.5.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.2"
+  }
+}
